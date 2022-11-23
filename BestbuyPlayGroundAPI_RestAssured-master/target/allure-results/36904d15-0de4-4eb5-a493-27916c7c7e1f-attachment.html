@@ -1,0 +1,35 @@
+<div>POST to http://localhost:3030/products</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;price&quot;: 99.99,
+    &quot;name&quot;: &quot;18OenwK3g1TQR4c173DB07WVH01sDQ5i9zV0s84hBL6WEFhO7i2et5qV16W2915y4RRWL1dceGkLWxhS621PlgHjAs777255fE32T&quot;,
+    &quot;upc&quot;: &quot;086480823447&quot;,
+    &quot;description&quot;: &quot;This is fan&quot;,
+    &quot;model&quot;: &quot;2020&quot;,
+    &quot;type&quot;: &quot;Appliance&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json; charset=UTF-8</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://localhost:3030/products&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json; charset=UTF-8&#39; -d &#39;{
+    &quot;price&quot;: 99.99,
+    &quot;name&quot;: &quot;18OenwK3g1TQR4c173DB07WVH01sDQ5i9zV0s84hBL6WEFhO7i2et5qV16W2915y4RRWL1dceGkLWxhS621PlgHjAs777255fE32T&quot;,
+    &quot;upc&quot;: &quot;086480823447&quot;,
+    &quot;description&quot;: &quot;This is fan&quot;,
+    &quot;model&quot;: &quot;2020&quot;,
+    &quot;type&quot;: &quot;Appliance&quot;
+}&#39;
+</div>

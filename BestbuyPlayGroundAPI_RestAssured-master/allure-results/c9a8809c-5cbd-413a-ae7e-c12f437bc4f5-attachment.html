@@ -1,0 +1,42 @@
+<div>POST to http://localhost:3030/stores</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;zip&quot;: &quot;55123&quot;,
+    &quot;hours&quot;: &quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,
+    &quot;address&quot;: &quot;123 Fake St&quot;,
+    &quot;lng&quot;: -93.449539,
+    &quot;address2&quot;: &quot;&quot;,
+    &quot;city&quot;: &quot;Springfield&quot;,
+    &quot;name&quot;: &quot;New Store&quot;,
+    &quot;state&quot;: &quot;MN&quot;,
+    &quot;type&quot;: &quot;BigBox&quot;,
+    &quot;lat&quot;: 44.969658
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://localhost:3030/stores&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;zip&quot;: &quot;55123&quot;,
+    &quot;hours&quot;: &quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,
+    &quot;address&quot;: &quot;123 Fake St&quot;,
+    &quot;lng&quot;: -93.449539,
+    &quot;address2&quot;: &quot;&quot;,
+    &quot;city&quot;: &quot;Springfield&quot;,
+    &quot;name&quot;: &quot;New Store&quot;,
+    &quot;state&quot;: &quot;MN&quot;,
+    &quot;type&quot;: &quot;BigBox&quot;,
+    &quot;lat&quot;: 44.969658
+}&#39;
+</div>
